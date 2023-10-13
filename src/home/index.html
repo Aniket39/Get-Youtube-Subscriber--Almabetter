@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Adding favicon -->
+  <link rel="icon" href="https://www.youtube.com/s/desktop/dc71232b/img/favicon_144x144.png" sizes="144x144">
+  <!-- title of project -->
+  <title>YouTube Subscribers</title>
+  <!-- Adding some CSS -->
+  <style>
+    * {
+      margin: 0px;
+    }
+
+    body {
+      background: rgb(8, 1, 116);
+      background: linear-gradient(126deg, rgba(8, 1, 116, 1) 0%, rgba(4, 144, 53, 1) 53%, rgba(21, 216, 255, 1) 100%);
+      height: 97vh;
+    }
+
+    hr {
+      color: white;
+    }
+
+    .text {
+      text-align: center;
+      color: white;
+      margin: 20px;
+    }
+
+    .container {
+      margin: 0px 100px;
+    }
+
+    li {
+      margin: 30px;
+      font-size: x-large;
+      line-height: 1.6;
+    }
+
+    .linkedin {
+      color: white;
+    }
+
+    .linkedin:hover {
+      color: blue;
+    }
+
+    .routes {
+      color: white;
+      background-color: rgb(28, 28, 249);
+      padding: 8px;
+      border-radius: 10px;
+      border: 1px solid red;
+    }
+
+    .routes:hover {
+      color: black;
+      background-color: blue;
+
+    }
+
+    /* Adding media query */
+    @media only screen and (max-width: 768px) {
+      .container {
+        margin: 0px 10px;
+      }
+
+      body {
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Home page -->
+  <div class="container">
+    <h1 class="text">This project is made by <i> <a class="linkedin" href="https://www.linkedin.com/in/iamnaveensingh/"
+          target="_blank"> Aniket singh </a>!</i></h1>
+    <hr>
+    <h1 class="text">These are the routes in this API</h1>
+    <hr>
+    <h1 class="text">You can try entering each route using the routes given below</h1>
+    <hr>
+    <!-- Some info about routes -->
+    <ul>
+      <li>Add <a class="routes" href="/subscribers">/subscribers</a> in URL : Provides an array of all subscribers in
+        the database.
+      </li>
+      <li>Add <a class="routes" href="/subscribers/names">/subscribers/names</a> in URL : Provides an array of
+        subscribers with only two fields name and subscribedChannel
+      </li>
+      <li>Add <a class="routes" href="/subscribers/64480ca582addf25ac622b28">/subscribers/:id</a> in URL: Provides the
+        details of a subscriber with the given ID.
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
